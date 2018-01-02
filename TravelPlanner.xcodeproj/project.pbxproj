@@ -12,6 +12,8 @@
 		081EBA5E1FFB331F00D7EE41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081EBA5C1FFB331F00D7EE41 /* Main.storyboard */; };
 		081EBA601FFB331F00D7EE41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081EBA5F1FFB331F00D7EE41 /* Assets.xcassets */; };
 		081EBA631FFB331F00D7EE41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081EBA611FFB331F00D7EE41 /* LaunchScreen.storyboard */; };
+		081EBA6B1FFB343200D7EE41 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 081EBA6A1FFB343200D7EE41 /* GoogleService-Info.plist */; };
+		8CA5CEF641EC3E5CBB92844D /* Pods_TravelPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4043B3F87799C4BB7E1097A /* Pods_TravelPlanner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		081EBA5F1FFB331F00D7EE41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		081EBA621FFB331F00D7EE41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		081EBA641FFB331F00D7EE41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081EBA6A1FFB343200D7EE41 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3AAC0DF4D57F1FBE002E79E9 /* Pods-TravelPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelPlanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelPlanner/Pods-TravelPlanner.release.xcconfig"; sourceTree = "<group>"; };
+		748CC5D0D9DC79FF060C18F5 /* Pods-TravelPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelPlanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelPlanner/Pods-TravelPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		B4043B3F87799C4BB7E1097A /* Pods_TravelPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CA5CEF641EC3E5CBB92844D /* Pods_TravelPlanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				081EBA571FFB331F00D7EE41 /* TravelPlanner */,
 				081EBA561FFB331F00D7EE41 /* Products */,
+				CAD0EA699584976DC813DFC9 /* Pods */,
+				BE394392DE411B6A6EB34A37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				081EBA5F1FFB331F00D7EE41 /* Assets.xcassets */,
 				081EBA611FFB331F00D7EE41 /* LaunchScreen.storyboard */,
 				081EBA641FFB331F00D7EE41 /* Info.plist */,
+				081EBA6A1FFB343200D7EE41 /* GoogleService-Info.plist */,
 			);
 			path = TravelPlanner;
+			sourceTree = "<group>";
+		};
+		BE394392DE411B6A6EB34A37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4043B3F87799C4BB7E1097A /* Pods_TravelPlanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAD0EA699584976DC813DFC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				748CC5D0D9DC79FF060C18F5 /* Pods-TravelPlanner.debug.xcconfig */,
+				3AAC0DF4D57F1FBE002E79E9 /* Pods-TravelPlanner.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 081EBA671FFB331F00D7EE41 /* Build configuration list for PBXNativeTarget "TravelPlanner" */;
 			buildPhases = (
+				31D075B0A4B998E73931C1CC /* [CP] Check Pods Manifest.lock */,
 				081EBA511FFB331F00D7EE41 /* Sources */,
 				081EBA521FFB331F00D7EE41 /* Frameworks */,
 				081EBA531FFB331F00D7EE41 /* Resources */,
+				1344075C319BED21FC4A7EF1 /* [CP] Embed Pods Frameworks */,
+				75FC169FF6278F088C4AE740 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				081EBA631FFB331F00D7EE41 /* LaunchScreen.storyboard in Resources */,
+				081EBA6B1FFB343200D7EE41 /* GoogleService-Info.plist in Resources */,
 				081EBA601FFB331F00D7EE41 /* Assets.xcassets in Resources */,
 				081EBA5E1FFB331F00D7EE41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1344075C319BED21FC4A7EF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravelPlanner/Pods-TravelPlanner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelPlanner/Pods-TravelPlanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31D075B0A4B998E73931C1CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelPlanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75FC169FF6278F088C4AE740 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelPlanner/Pods-TravelPlanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		081EBA511FFB331F00D7EE41 /* Sources */ = {
@@ -272,6 +363,7 @@
 		};
 		081EBA681FFB331F00D7EE41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748CC5D0D9DC79FF060C18F5 /* Pods-TravelPlanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +379,7 @@
 		};
 		081EBA691FFB331F00D7EE41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AAC0DF4D57F1FBE002E79E9 /* Pods-TravelPlanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
